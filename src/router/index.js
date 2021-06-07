@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Works from "../views/Works.vue";
+import Error404 from "../views/Error404.vue";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/works",
     name: "Works",
     component: Works,
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "404",
+    component: Error404,
   },
 ];
 
