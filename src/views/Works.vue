@@ -65,7 +65,7 @@ export default {
       },
       {
         title: "Kamppi website",
-        imgUrl: "matkus.png",
+        imgUrl: "kamppi.png",
         siteUrl: "https://kamppi.fi/",
         sourceCodeUrl: "",
       },
