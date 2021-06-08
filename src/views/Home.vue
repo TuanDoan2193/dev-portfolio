@@ -356,21 +356,27 @@ export default {
     const tlImage = gsap.timeline();
     const tlTitle = gsap.timeline();
     tlOverlay
-      .to(".overlay-1", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      })
-      .to(".overlay-2", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      })
-      .to(".overlay-3", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      });
+      .fromTo(
+        ".overlay-1",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      )
+      .fromTo(
+        ".overlay-2",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      )
+      .fromTo(
+        ".overlay-3",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      );
     tlImage
       .from("#Path-27", {
         duration: 0.4,

@@ -31,7 +31,6 @@
       </div>
     </div>
   </div>
-  <div></div>
 </template>
 <script>
 import { ref } from "vue";
@@ -90,21 +89,27 @@ export default {
     const tlOverlay = gsap.timeline();
     const tlWorks = gsap.timeline();
     tlOverlay
-      .to(".overlay-1", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      })
-      .to(".overlay-2", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      })
-      .to(".overlay-3", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      });
+      .fromTo(
+        ".overlay-1",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      )
+      .fromTo(
+        ".overlay-2",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      )
+      .fromTo(
+        ".overlay-3",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      );
     tlWorks.from(".works-wrapper", {
       duration: 0.5,
       y: 100,

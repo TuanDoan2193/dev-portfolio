@@ -115,22 +115,29 @@ export default {
   mounted() {
     const tlOverlay = gsap.timeline();
     const tlAboutSections = gsap.timeline();
+    tlOverlay;
     tlOverlay
-      .to(".overlay-1", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      })
-      .to(".overlay-2", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      })
-      .to(".overlay-3", {
-        duration: 0.4,
-        y: -1000,
-        opacity: 0,
-      });
+      .fromTo(
+        ".overlay-1",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      )
+      .fromTo(
+        ".overlay-2",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      )
+      .fromTo(
+        ".overlay-3",
+        {
+          y: 0,
+        },
+        { y: -1500, duration: 0.4 }
+      );
     tlAboutSections
       .from(".about-section-bio", {
         duration: 0.5,
