@@ -28,7 +28,7 @@ export const Experience = () => {
       subTitle: "05/2024 - present",
       url: "https://www.pwc.fi/",
       content: (
-        <div className="flex flex-col gap-6 text-neutral-800 dark:text-neutral-300 text-xs md:text-lg font-normal">
+        <div className="flex flex-col gap-6 text-neutral-300 text-xs md:text-lg font-normal">
           <p>
             Designed the architecture and led the development of an internal
             audit budgeting solution, effectively reducing development costs by
@@ -53,7 +53,7 @@ export const Experience = () => {
       subTitle: "08/2023 - 05/2024",
       url: "https://www.almamedia.fi/",
       content: (
-        <div className="flex flex-col gap-6 text-neutral-800 dark:text-neutral-300 text-xs md:text-lg font-normal">
+        <div className="flex flex-col gap-6 text-neutral-300 text-xs md:text-lg font-normal">
           <p>
             Built and maintained an end-to-end, large multi-tier SaaS platform
             for vehicle sales, contributing to over $100 million in Consumer
@@ -77,7 +77,7 @@ export const Experience = () => {
       subTitle: "09/2021 - 08/2023",
       url: "https://supermetrics.com/",
       content: (
-        <div className="flex flex-col gap-6 text-neutral-800 dark:text-neutral-300 text-xs md:text-lg font-normal">
+        <div className="flex flex-col gap-6 text-neutral-300 text-xs md:text-lg font-normal">
           <p>
             Developed a Google Sheets add-on application (recommended by Google
             Workspace with over <b>1 million downloads</b>) to help more than{" "}
@@ -99,7 +99,7 @@ export const Experience = () => {
       subTitle: "09/2019 - 09/2021",
       url: "https://www.hyperin.com/",
       content: (
-        <div className="flex flex-col gap-6 text-neutral-800 dark:text-neutral-300 text-xs md:text-lg font-normal">
+        <div className="flex flex-col gap-6 text-neutral-300 text-xs md:text-lg font-normal">
           <p>
             Built and maintained websites and web applications for shopping
             centers, serving over <b>700 million visitors</b> across various
@@ -134,9 +134,7 @@ export const Experience = () => {
   return (
     <div className="max-w-7xl mx-auto md:px-4" ref={containerRef}>
       <div className="pt-20">
-        <h2 className="text-4xl text-black dark:text-white pl-6">
-          Journey timeline
-        </h2>
+        <h2 className="text-4xl text-white pl-6">Journey timeline</h2>
       </div>
 
       <div ref={ref} className="relative pb-20">
@@ -146,8 +144,8 @@ export const Experience = () => {
             className="flex justify-start pt-10 md:pt-20 md:gap-4"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-black flex items-center justify-center">
+                <div className="h-4 w-4 rounded-full bg-neutral-800 border border-neutral-700 p-2" />
               </div>
               <div className="hidden md:block md:pl-20 ">
                 <a
@@ -180,7 +178,7 @@ export const Experience = () => {
             </div>
           </div>
         ))}
-        <div className="h-[100%] absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] ">
+        <div className="h-[100%] absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] ">
           <motion.div
             style={{
               height: heightTransform,

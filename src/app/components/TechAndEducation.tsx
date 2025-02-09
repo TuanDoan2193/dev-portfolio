@@ -37,9 +37,7 @@ export const TechAndEducation = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 pt-20">
       <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-black">
-        <h2 className="text-4xl text-black dark:text-white pl-6">
-          Stack and education
-        </h2>
+        <h2 className="text-4xl text-white pl-6">Stack and education</h2>
         <div className="grid gap-4 lg:grid-cols-4 mt-4 p-6">
           <div className="col-span-2 mb-4 lg:mb-0">
             {techs.map((tech) => (
