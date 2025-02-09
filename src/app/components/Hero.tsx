@@ -39,8 +39,12 @@ export const Hero = () => {
 
       <Spotlight />
       <div className="w-full flex flex-col justify-center items-center text-center">
-        <h1 className={`text-7xl ${oxanium.className}`}>Tuan Doan</h1>
-        <div className={`text-2xl font-bold pl-2 ${oxanium.className}`}>
+        <h1 className={`text-7xl text-white ${oxanium.className}`}>
+          Tuan Doan
+        </h1>
+        <div
+          className={`text-2xl text-white font-bold pl-2 ${oxanium.className}`}
+        >
           Software Engineer
         </div>
         <div className="text-lg text-neutral-200 pt-10 pl-2 pb-20">

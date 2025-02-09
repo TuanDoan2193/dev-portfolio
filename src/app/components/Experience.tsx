@@ -151,7 +151,7 @@ export const Experience = () => {
                 <a
                   target="_blank"
                   href={item.url}
-                  className="text-3xl mb-4 text-left font-bold"
+                  className="text-3xl mb-4 text-white font-bold"
                 >
                   {item.title}
                 </a>
@@ -166,7 +166,7 @@ export const Experience = () => {
                 <a
                   target="_blank"
                   href={item.url}
-                  className="text-2xl mb-4 text-left font-bold"
+                  className="text-2xl mb-4 text-white font-bold"
                 >
                   {item.title}
                 </a>
