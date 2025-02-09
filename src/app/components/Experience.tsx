@@ -151,12 +151,13 @@ export const Experience = () => {
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
               <div className="hidden md:block md:pl-20 ">
-                <LinkPreview
-                  url={item.url}
-                  className="text-2xl mb-4 text-left font-bold"
+                <a
+                  target="_blank"
+                  href={item.url}
+                  className="text-3xl mb-4 text-left font-bold"
                 >
                   {item.title}
-                </LinkPreview>
+                </a>
                 <h4 className="text-lg font-bold text-neutral-300">
                   {item.subTitle}
                 </h4>
@@ -165,12 +166,13 @@ export const Experience = () => {
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full pt-2">
               <div className="md:hidden block pb-6">
-                <LinkPreview
-                  url={item.url}
+                <a
+                  target="_blank"
+                  href={item.url}
                   className="text-2xl mb-4 text-left font-bold"
                 >
                   {item.title}
-                </LinkPreview>
+                </a>
                 <h4 className="text-sm font-bold text-neutral-300">
                   {item.subTitle}
                 </h4>
