@@ -6,7 +6,7 @@ import { TextHoverEffect } from "@/components/TextHoverEffect";
 export default function Home() {
   const year = new Date().getFullYear();
   return (
-    <div>
+    <div className="relative">
       <div className="pb-10 md:pb-40">
         <Hero />
         <Experience />
