@@ -49,8 +49,10 @@ export const TechAndEducation = () => {
           <div className="col-span-2">
             {universities.map((university) => (
               <div key={university.name}>
-                <div className="text-lg font-bold">{university.name}</div>
-                <div className="flex h-5 items-center space-x-2 text-xs text-muted-foreground mt-1 sm:mt-0">
+                <div className="text-lg font-bold text-white">
+                  {university.name}
+                </div>
+                <div className="flex h-5 items-center space-x-2 text-xs text-neutral-200 mt-1 sm:mt-0">
                   {university.degree}
                 </div>
               </div>
